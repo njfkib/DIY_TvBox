@@ -33,9 +33,10 @@ mv $CURRENT_DIR/DIY/app_icon.png $CURRENT_DIR/$DIR/app/src/main/res/drawable-xxx
 #主页UI微调
 cp $CURRENT_DIR/DIY/J/fragment_user.xml $CURRENT_DIR/$DIR/app/src/main/res/layout/fragment_user.xml
 
-#主页增加每日一言
-#cp $CURRENT_DIR/DIY/J/activity_home.xml $CURRENT_DIR/$DIR/app/src/main/res/layout/activity_home.xml
-#cp $CURRENT_DIR/DIY/J/HomeActivity.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/HomeActivity.java
+#主页增加每日一言1.0
+cp $CURRENT_DIR/DIY/J/ApiConfig.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/api/ApiConfig.java
+cp $CURRENT_DIR/DIY/J/activity_home.xml $CURRENT_DIR/$DIR/app/src/main/res/layout/activity_home.xml
+cp $CURRENT_DIR/DIY/J/HomeActivity.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/ui/activity/HomeActivity.java
 
 #背景修改
 cp $CURRENT_DIR/DIY/app_bg_black.png $CURRENT_DIR/$DIR/app/src/main/res/drawable/app_bg.png
@@ -43,8 +44,8 @@ cp $CURRENT_DIR/DIY/app_bg_black.png $CURRENT_DIR/$DIR/app/src/main/res/drawable
 # 默认设置
 cp $CURRENT_DIR/DIY/J/App.java $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/base/App.java 
 
-# 内置接口String apiUrl = Hawk.get(HawkConfig.API_URL, "https://gitee.com/zhoujck/tv/raw/master/box");
-#sed -i 's#API_URL, ""#API_URL, "https://gitee.com/zhoujck/tv/raw/master/box"#g'   $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/api/ApiConfig.java
+# 内置接口
+sed -i 's#API_URL, ""#API_URL, "https://gitee.com/zhoujck/tv/raw/master/box"#g'   $CURRENT_DIR/$DIR/app/src/main/java/com/github/tvbox/osc/api/ApiConfig.java
 
 #自定义epg
 #cp $CURRENT_DIR/DIY/epg_data.json $CURRENT_DIR/$DIR/app/src/main/assets/epg_data.json
